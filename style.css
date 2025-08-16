@@ -81,10 +81,4 @@ background-color: #333333;
   border-radius: 10px;
   transform: scale(1.11);
 }
-@media (max-width: 900px) {
-  .parent {
-    width: 250px;
-    height: 440px;
-    margin: 70px 0px;
-  }
-}
+
