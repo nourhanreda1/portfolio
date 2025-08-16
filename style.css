@@ -8,15 +8,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% - 20);
 }
 .parent{
     background-color: #1f1f1f;
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    margin: 60px auto;
+    width: 100%;              /* يخلي العرض مرن */
+    max-width: 350px;         /* الحد الأقصى */
+    height: auto;             /* يخلي الطول يضبط نفسه */
+    margin: 70px auto;
     border-radius: 10px;
+    padding: 20px;            /* مسافة داخلية */
 }
 .parent .pro{
     display: flex;
@@ -24,7 +24,7 @@ body{
     margin: 30px 0px 10px 0px ;
 }
 .parent .pro img{
-     border-radius: 100px;
+    border-radius: 100px;
     width: 80px;
 }
 .parent .name{
@@ -45,68 +45,65 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-color: #e3af9e;
+    color: #e3af9e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .parent .para{
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .parent .para p{
     color: #ECDFCC;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 .parent .links{
-    margin: 20px 35px;
-
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .parent .links a{
     text-decoration: none;
     font-size: 16px;
+    width: 100%;
 }
 .parent .links a button{
-        color: white;
-
+    color: white;
     height: 34px;
-    width: 280px;
+    width: 100%;              /* يخلي الزرار يتمدد */
     margin-bottom: 10px;
     border-radius: 10px;
-border-width: 0px;
-background-color: #333333;
+    border-width: 0px;
+    background-color: #333333;
 }
 .parent .links button:hover{
-     background-color: #fdccbb;
+    background-color: #fdccbb;
     cursor: pointer; 
     color: #000;
     border: 1px solid;
-  border-radius: 10px;
-  transform: scale(1.11);
+    border-radius: 10px;
+    transform: scale(1.05);
 }
+
+/* الموبايل */
 @media (max-width: 500px) {
   .parent {
-    max-width: 90%; /* ياخد 90% من الشاشة */
+    max-width: 90%;  /* ياخد 90% من الشاشة */
     margin: 20px auto;
-  }
-  .parent .links a button {
-    width: 100%; /* يوسع البوتونات على قد الشاشة */
   }
 }
 
 /* التابلت */
 @media (min-width: 501px) and (max-width: 900px) {
   .parent {
-    max-width: 70%; /* مناسب للتابلت */
-  }
-  .parent .links a button {
-    width: 100%;
+    max-width: 70%;  /* ياخد 70% من الشاشة */
   }
 }
 
 /* اللابتوب والشاشات الكبيرة */
 @media (min-width: 901px) {
   .parent {
-    max-width: 350px; /* زي ما هو أصلاً */
+    max-width: 350px; /* الحد الطبيعي */
   }
 }
-
