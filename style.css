@@ -8,12 +8,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100% - 20);
 }
 .parent{
     background-color: #1f1f1f;
-    width: 350px;
-    height: 500px;
-    margin: 70px 0px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 60px auto;
     border-radius: 10px;
 }
 .parent .pro{
@@ -81,12 +83,30 @@ background-color: #333333;
   border-radius: 10px;
   transform: scale(1.11);
 }
-
-@media (max-width: 600px) {
-  body {
-    background-color: lightblue;
+@media (max-width: 500px) {
+  .parent {
+    max-width: 90%; /* ياخد 90% من الشاشة */
+    margin: 20px auto;
+  }
+  .parent .links a button {
+    width: 100%; /* يوسع البوتونات على قد الشاشة */
   }
 }
 
+/* التابلت */
+@media (min-width: 501px) and (max-width: 900px) {
+  .parent {
+    max-width: 70%; /* مناسب للتابلت */
+  }
+  .parent .links a button {
+    width: 100%;
+  }
+}
 
+/* اللابتوب والشاشات الكبيرة */
+@media (min-width: 901px) {
+  .parent {
+    max-width: 350px; /* زي ما هو أصلاً */
+  }
+}
 
