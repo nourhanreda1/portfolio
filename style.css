@@ -82,3 +82,10 @@ background-color: #333333;
   transform: scale(1.11);
 }
 
+@media (max-width: 900px) {
+  .parent {
+       margin-top: 60px;
+
+  }
+}
+
