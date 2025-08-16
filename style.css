@@ -5,8 +5,6 @@
 }
 body{
     background-color: #141414;
-        background-color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +92,7 @@ background-color: #333333;
   .parent{
     width: 100%;
     height: auto;
-    margin: 60px 20px;
+    margin: 60px 20px 20px 20px;
 }
 .parent .links a button{
     width: 100%;
@@ -107,7 +105,3 @@ background-color: #333333;
     margin: 60px auto;
   }
 }
-
-
-
-
