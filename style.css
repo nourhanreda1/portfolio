@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    background-color: #1f1f1f;
+    width: 350px;
+    height: 500px;
+    margin: 70px 0px;
+    border-radius: 10px;
+}
+.parent .pro{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 10px 0px ;
+}
+.parent .pro img{
+     border-radius: 100px;
+    width: 80px;
+}
+.parent .name{
+    display: flex;
+    justify-content: center;
+}
+.parent .name h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 22px;
+    color: #ECDFCC;
+}
+.parent .loc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.parent .loc a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+color: #e3af9e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parent .para{
+display: flex;
+justify-content: center;
+}
+.parent .para p{
+    color: #ECDFCC;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14px;
+}
+.parent .links{
+    margin: 20px 35px;
+
+}
+.parent .links a{
+    text-decoration: none;
+    font-size: 16px;
+}
+.parent .links a button{
+        color: white;
+
+    height: 34px;
+    width: 280px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+border-width: 0px;
+background-color: #333333;
+}
+.parent .links button:hover{
+     background-color: #fdccbb;
+    cursor: pointer; 
+    color: #000;
+    border: 1px solid;
+  border-radius: 10px;
+  transform: scale(1.11);
+}
