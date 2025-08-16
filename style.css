@@ -82,10 +82,9 @@ background-color: #333333;
   transform: scale(1.11);
 }
 
-@media (max-width: 900px) {
-  .parent {
-       margin-top: 100px;
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
   }
 }
 
