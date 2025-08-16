@@ -8,15 +8,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; /* يخلي الكارت في النص */
 }
 .parent{
     background-color: #1f1f1f;
-    width: 100%;              /* يخلي العرض مرن */
-    max-width: 350px;         /* الحد الأقصى */
-    height: auto;             /* يخلي الطول يضبط نفسه */
-    margin: 70px auto;
+    width: 95%;        /* افتراضيًا ياخد 95% من الشاشة */
+    height: auto;       
+    margin: 20px auto;
     border-radius: 10px;
-    padding: 20px;            /* مسافة داخلية */
+    padding: 20px;
 }
 .parent .pro{
     display: flex;
@@ -25,11 +25,12 @@ body{
 }
 .parent .pro img{
     border-radius: 100px;
-    width: 80px;
+    width: 90px;
 }
 .parent .name{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .parent .name h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
@@ -51,6 +52,8 @@ body{
 .parent .para{
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin: 0 10px;
 }
 .parent .para p{
     color: #ECDFCC;
@@ -62,6 +65,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    width: 100%;
 }
 .parent .links a{
     text-decoration: none;
@@ -70,12 +75,12 @@ body{
 }
 .parent .links a button{
     color: white;
-    height: 34px;
-    width: 100%;              /* يخلي الزرار يتمدد */
-    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
     border-radius: 10px;
     border-width: 0px;
     background-color: #333333;
+    font-size: 15px;
 }
 .parent .links button:hover{
     background-color: #fdccbb;
@@ -89,21 +94,36 @@ body{
 /* الموبايل */
 @media (max-width: 500px) {
   .parent {
-    max-width: 90%;  /* ياخد 90% من الشاشة */
-    margin: 20px auto;
+    width: 95%;   /* ياخد 95% من الشاشة */
+  }
+  .parent .name h1 {
+    font-size: 20px;
+  }
+  .parent .para p {
+    font-size: 13px;
+  }
+  .parent .links a button {
+    height: 42px;
+    font-size: 14px;
   }
 }
 
 /* التابلت */
 @media (min-width: 501px) and (max-width: 900px) {
   .parent {
-    max-width: 70%;  /* ياخد 70% من الشاشة */
+    width: 80%;   /* ياخد 80% من الشاشة */
+  }
+  .parent .links a button {
+    height: 44px;
+    font-size: 15px;
   }
 }
 
 /* اللابتوب والشاشات الكبيرة */
 @media (min-width: 901px) {
   .parent {
-    max-width: 350px; /* الحد الطبيعي */
+    width: 100%;
+    max-width: 350px; /* ثابت */
+    margin: 70px auto;
   }
 }
