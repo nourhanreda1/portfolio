@@ -90,15 +90,22 @@ background-color: #333333;
 }
 }
 @media (min-width: 501px) and (max-width: 900px) {
-  .parent{
-     width: 90%;
+  body{
+        flex-direction: column;
+        min-height: 100vh;
+         justify-content: center;
+    align-items: center;
+    }
+  .parent {
+    width: 90%;
     max-width: 400px;
     height: auto;
     margin: 60px auto;
-}
-.parent .links a button{
-    width: 100%;
-}
+  }
+  .parent .links a button {
+    width: 100%;       
+  }
+
 }
 @media (min-width: 901px) {
   .parent {
@@ -107,4 +114,5 @@ background-color: #333333;
     margin: 60px auto;
   }
 }
+
 
