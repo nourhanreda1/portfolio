@@ -109,11 +109,12 @@ background-color: #333333;
 }
 @media (min-width: 901px) {
   .parent {
-    width: 370px ;
+    width: 350px ;
     height: auto;
-    margin: 60px auto;
+    margin:40 px auto;
   }
 }
+
 
 
 
