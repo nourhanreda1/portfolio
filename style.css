@@ -79,4 +79,30 @@ background-color: #333333;
   transform: scale(1.01);
 }
 
-
+@media (max-width: 500px) {
+.parent{
+    width: 100%;
+    height: auto;
+    margin: 60px 20px;
+}
+.parent .links a button{
+    width: 100%;
+}
+}
+@media (min-width: 501px) and (max-width: 900px) {
+  .parent{
+    width: 100%;
+    height: auto;
+    margin: 60px 20px 20px 20px;
+}
+.parent .links a button{
+    width: 100%;
+}
+}
+@media (min-width: 901px) {
+  .parent {
+    width: 350px ;
+    height: auto;
+    margin: 60px auto;
+  }
+}
