@@ -1,117 +1,136 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #141414;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.parent{
+
+.parent {
     background-color: #1f1f1f;
     border-radius: 10px;
     flex-direction: column;
 }
-.parent .pro{
+
+.parent .pro {
     display: flex;
     justify-content: center;
-    margin: 30px 0px 10px 0px ;
+    margin: 30px 0px 10px 0px;
 }
-.parent .pro img{
-     border-radius: 100px;
+
+.parent .pro img {
+    border-radius: 100px;
     width: 80px;
 }
-.parent .name{
+
+.parent .name {
     display: flex;
     justify-content: center;
 }
-.parent .name h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+
+.parent .name h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
     color: #ECDFCC;
 }
-.parent .loc{
+
+.parent .loc {
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
 }
-.parent .loc a{
+
+.parent .loc a {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
-color: #e3af9e;
+    color: #e3af9e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.parent .para{
-display: flex;
-justify-content: center;
+
+.parent .para {
+    display: flex;
+    justify-content: center;
 }
-.parent .para p{
+
+.parent .para p {
     color: #ECDFCC;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
-.parent .links{
+
+.parent .links {
     margin: 20px 35px;
 
 }
-.parent .links a{
+
+.parent .links a {
     text-decoration: none;
     font-size: 16px;
 }
-.parent .links a button{
-        color: white;
+
+.parent .links a button {
+    color: white;
 
     height: 34px;
     width: 280px;
     margin-bottom: 10px;
     border-radius: 10px;
-border-width: 0px;
-background-color: #333333;
+    border-width: 0px;
+    background-color: #333333;
 }
-.parent .links button:hover{
-     background-color: #fdccbb;
-    cursor: pointer; 
+
+.parent .links button:hover {
+    background-color: #fdccbb;
+    cursor: pointer;
     color: #000;
     border: 1px solid;
-  border-radius: 10px;
-  transform: scale(1.01);
+    border-radius: 10px;
+    transform: scale(1.01);
 }
+
 @media (max-width: 500px) {
-.parent{
-    width: 100%;
-    height: auto;
-    margin: 60px 20px;
+    .parent {
+        width: 100%;
+        height: auto;
+        margin: 60px 20px;
+    }
+
+    .parent .links a button {
+        width: 100%;
+    }
 }
-.parent .links a button{
-    width: 100%;
-}
-}
+
 @media (min-width: 501px) and (max-width: 900px) {
-  body{
+    body {
         flex-direction: column;
         min-height: 100vh;
-         justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
     }
-  .parent {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    margin: 60px auto;
-  }
-  .parent .links a button {
-    width: 100%;
-  }
+
+    .parent {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 60px auto;
+    }
+
+    .parent .links a button {
+        width: 100%;
+    }
 
 }
+
 @media (min-width: 901px) {
-  .parent {
-    width: 350px ;
-    height: auto;
-    margin: 50px 0px 20px 0px ;
-  }
+    .parent {
+        width: 350px;
+        height: auto;
+        margin: 50px 0px 20px 0px;
+    }
 }
-
