@@ -12,6 +12,7 @@ body{
 .parent{
     background-color: #1f1f1f;
     border-radius: 10px;
+    flex-direction: column;
 }
 .parent .pro{
     display: flex;
@@ -78,7 +79,6 @@ background-color: #333333;
   border-radius: 10px;
   transform: scale(1.01);
 }
-
 @media (max-width: 500px) {
 .parent{
     width: 100%;
@@ -91,31 +91,27 @@ background-color: #333333;
 }
 @media (min-width: 501px) and (max-width: 900px) {
   body{
-        
+        flex-direction: column;
+        min-height: 100vh;
+         justify-content: center;
+    align-items: center;
     }
   .parent {
-    width: 100%;
+    width: 90%;
+    max-width: 400px;
     height: auto;
+    margin: 60px auto;
   }
   .parent .links a button {
-    width: 100%;       
-  }
+    width: 100%;
+  }
 
 }
 @media (min-width: 901px) {
   .parent {
     width: 350px ;
     height: auto;
-    margin:40 px auto;
+    margin: 50px 0px 20px 0px ;
   }
 }
-
-
-
-
-
-
-
-
-
 
