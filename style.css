@@ -91,9 +91,10 @@ background-color: #333333;
 }
 @media (min-width: 501px) and (max-width: 900px) {
   .parent{
-    width: 100%;
+     width: 90%;
+    max-width: 400px;
     height: auto;
-    margin: 60px 20px 20px 20px;
+    margin: 60px auto;
 }
 .parent .links a button{
     width: 100%;
@@ -106,3 +107,4 @@ background-color: #333333;
     margin: 60px auto;
   }
 }
+
