@@ -94,43 +94,35 @@ body {
     transform: scale(1.01);
 }
 
-@media (max-width: 500px) {
-    .parent {
-        width: 100%;
-        height: auto;
-        margin: 60px 20px;
-    }
-
-    .parent .links a button {
-        width: 100%;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 900px) {
-    body {
-        flex-direction: column;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .parent {
-        width: 90%;
-        max-width: 400px;
-        height: auto;
-        margin: 60px auto;
-    }
-
-    .parent .links a button {
-        width: 100%;
-    }
-
-}
-
 @media (min-width: 901px) {
     .parent {
         width: 350px;
         height: auto;
         margin: 50px 0px 20px 0px;
+    }
+}
+@media (min-width: 501px) and (max-width: 900px) {
+
+    .parent {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 50px 0px 20px 0px;
+    }
+
+    .parent .links a button {
+        width: 100%;
+    }
+
+}
+@media (max-width: 500px) {
+    .parent {
+        width: 100%;
+        height: auto;
+        margin: 50px 20px 20px 20px;
+    }
+
+    .parent .links a button {
+        width: 100%;
     }
 }
