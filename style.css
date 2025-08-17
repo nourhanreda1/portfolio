@@ -83,14 +83,19 @@ background-color: #333333;
 .parent{
     width: 100%;
     height: auto;
-    margin: 60px 20px;
+    margin: 80px 20px;
 }
 .parent .links a button{
     width: 100%;
 }
 }
 @media (min-width: 501px) and (max-width: 900px) {
- 
+  body{
+        flex-direction: column;
+        max-height: 100vh;
+         justify-content: center;
+         align-items: center;
+    }
   .parent {
     width: 100%;
     max-width: 400px;
@@ -109,6 +114,7 @@ background-color: #333333;
     margin:40 px auto;
   }
 }
+
 
 
 
