@@ -45,7 +45,7 @@ body {
     margin-bottom: 12px;
 }
 
-.email {
+.email a{
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -91,7 +91,7 @@ body {
     color: #000;
     border: 1px solid;
     border-radius: 10px;
-    transform: scale(1.01);
+    transform: scale(1.1);
 }
 
 @media (min-width: 901px) {
