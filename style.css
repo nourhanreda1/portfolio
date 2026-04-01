@@ -39,13 +39,15 @@ body {
     color: #ECDFCC;
 }
 
-.parent .loc {
+.parent .loc ,
+.email {
     display: flex;
     justify-content: center;
     margin-bottom: 12px;
 }
 
-.parent .loc a {
+.parent .loc a ,
+.email {
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
